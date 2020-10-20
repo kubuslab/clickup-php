@@ -1,24 +1,25 @@
 {
-    "name": "howyi/clickup-php",
+    "name": "tarohida/clickup-php",
     "description": "ClickUp API client (unofficial)",
     "keywords": ["ClickUp", "click-up", "api"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name":  "Hayashi Takuya",
-            "email": "qrbys@outlook.com"
+            "name":  "Taro Hida",
+            "email": "sk8trou@gmail.com"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.6",
-        "guzzlehttp/guzzle": "^6.3"
+        "php": ">=7.2.5",
+        "guzzlehttp/guzzle": "^7.0"
     },
     "autoload": {
       "psr-4": { "ClickUp\\": "src/ClickUp/" }
     },
     "require-dev": {
-        "psy/psysh": "^0.9.8"
+        "psy/psysh": "^0.9.8",
+	"phpunit/phpunit": "^9.0"
     }
 }
