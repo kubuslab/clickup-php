@@ -20,6 +20,6 @@
     },
     "require-dev": {
         "psy/psysh": "^0.10.0",
-	"phpunit/phpunit": "^9.0"
+	"phpunit/phpunit": "*"
     }
 }
