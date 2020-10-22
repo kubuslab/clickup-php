@@ -79,7 +79,7 @@ class Client
 	public function get($method, $params = [])
 	{
 		$response = $this->guzzleClient->request('GET', $method, ['query' => $params]);
-		return \GuzzleHttp\json_decode($response->getBody(), true);
+		return \GuzzleHttp\Utils::jsonDecode($response->getBody(), true);
 	}
 
 	/**
@@ -89,7 +89,7 @@ class Client
 	 */
 	public function post($method, $body = [])
 	{
-		return \GuzzleHttp\json_decode($this->guzzleClient->request('POST', $method, ['json' => $body])->getBody(), true);
+		return \GuzzleHttp\Utils::jsonDecode($this->guzzleClient->request('POST', $method, ['json' => $body])->getBody(), true);
 	}
 
 	/**
@@ -99,6 +99,6 @@ class Client
 	 */
 	public function put($method, $body = [])
 	{
-		return \GuzzleHttp\json_decode($this->guzzleClient->request('PUT', $method, ['json' => $body])->getBody(), true);
+		return \GuzzleHttp\Utils::jsonDecode($this->guzzleClient->request('PUT', $method, ['json' => $body])->getBody(), true);
 	}
 }
