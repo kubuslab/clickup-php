@@ -14,6 +14,7 @@ class Client
 	public function __construct($apiToken)
 	{
 		$this->guzzleClient = new \GuzzleHttp\Client([
+			// todo: change uri to v2
 			'base_uri' => 'https://api.clickup.com/api/v1/',
 			'headers' => [
 				'Authorization' => $apiToken,
