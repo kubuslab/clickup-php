@@ -15,9 +15,10 @@ class Client
 	{
 		$this->guzzleClient = new \GuzzleHttp\Client([
 			// todo: change uri to v2
-			'base_uri' => 'https://api.clickup.com/api/v1/',
+			'base_uri' => 'https://api.clickup.com/api/v2/',
 			'headers' => [
 				'Authorization' => $apiToken,
+				'Content-Type' => 'application/json'
 			]
 		]);
 	}
