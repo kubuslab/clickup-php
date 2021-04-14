@@ -1,13 +1,13 @@
 {
-    "name": "tarohida/clickup-php",
+    "name": "kubuslab/clickup-php",
     "description": "ClickUp API client (unofficial)",
     "keywords": ["ClickUp", "click-up", "api"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name":  "Taro Hida",
-            "email": "sk8trou@gmail.com"
+            "name":  "TimKubus",
+            "email": "timkubus@gmail.com"
         }
     ],
     "minimum-stability": "stable",
