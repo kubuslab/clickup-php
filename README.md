@@ -5,7 +5,7 @@ A simple wrapper for [ClickUp](https://clickup.com/) API (v1-BETA).
 
 ## Install
 ```
-composer require "tarohida/clickup-php"
+composer require "kubuslab/clickup-php"
 ```
 
 ## Usage
