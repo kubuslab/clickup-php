@@ -24,18 +24,18 @@ $client->user();
 // -> \ClickUp\Objects\User
 
 
-// all affiliated teams
+// all affiliated teams/workspaces
 $client->teams()->objects();
 // -> \ClickUp\Objects\Team[]
 
-// team by team id
+// team/workspace by team/workspace id
 $team = $client->team($teamId);
-// team by name
+// team/workspace by name
 $team = $client->teams()->getByName('team_name');
 // -> \ClickUp\Objects\Team
 
 
-// spaces in team
+// spaces in team/workspace
 $team->spaces()->objects();
 // -> \ClickUp\Objects\Space[]
 
@@ -46,17 +46,17 @@ $space = $team->spaces()->getByName('spaaaaace');
 // -> \ClickUp\Objects\Space
 
 
-// projects in space
+// projects/folders in space
 $space->projects()->objects();
 // -> \ClickUp\Objects\Project[]
 
-// project by project id
+// project/folder by project/folder id
 $project = $space->project(11111);
-// project by name
+// project/folder by name
 $project = $space->projects()->getByName('super cool project');
 // -> \ClickUp\Objects\Project
 
-// lists in project
+// lists in project/folder
 $project->taskLists()->objects();
 // -> \ClickUp\Objects\TaskList[]
 
